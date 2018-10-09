@@ -1,0 +1,14 @@
+* {
+	margin: 0;
+	box-sizing: inherit;
+}
+
+body {
+	margin: 0;
+	box-sizing: border-box;
+}
+
+h1 {
+	padding-top: 3rem;
+	text-align: center;
+}
