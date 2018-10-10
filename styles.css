@@ -36,6 +36,7 @@ nav > * {
 
 .menu > * {
 	float: left;
+	margin-top: 3px;
 }
 
 .hamburger {
@@ -63,6 +64,7 @@ nav > * {
 	width: 69%;
 	height: 100%;
 	padding-left: 10px;
+	border: 1px solid lightgray;
 }
 
 .search-btn {
@@ -121,7 +123,7 @@ main {
 }
 
 .container {
-	width: 1155px;
+	width: 1120px;
 	padding-top: 25px;
 	margin: 0 auto;
 }
@@ -132,33 +134,37 @@ main {
 
 .video-column {
 	width: 62%;
-	margin-right: 20px;
+	margin-right: 25px;
 	font-family: arial, sans-serif;
 }
 
 /* MAIN LEFT SIDE VIDEO INFO */
 
 .views {
-	display: inline-block;
-	width: 50%;
+	float: left;
+	width: 46.5%;
 	opacity: .6;
 }
 
 .video-info {
+	height: 70px;
 	border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .video-info h3 {
 	font-size: 17px;
 	font-weight: 400;
-	margin: 20px 0 15px 0;
+	margin: 20px 0 9px 0;
 }
 
 /* RIGHT SIDE OPTIONS BELOW THE VIDEO */
 .options {
 	display: inline-block;
-	width: 49%;
-	height: 35px;
+	width: 52.5%;
+	height: 40px;
+	font-size: 12px;
+	padding-top: 3px;
+	text-transform: uppercase;
 }
 
 .options > *:hover {
@@ -186,7 +192,14 @@ main {
 	margin-bottom: -3px;
 }
 
+.options svg:nth-of-type(2) {
+	margin-left: 20px;
+}
+
 .options .likes {
+	width: 135px;
+	padding-left: 10px;
+	font-weight: bold;
 	border-bottom: 2px solid rgba(0, 0, 0, 0.9);
 }
 
@@ -214,6 +227,7 @@ main {
 }
 
 .uploader-box__info p {
+	margin-top: 3px;
 	opacity: .5;
 }
 
@@ -527,25 +541,44 @@ main {
 
 /* THE ASIDE, SUGGESTED VIDEOS */
 .suggested {
-	width: 30%;
+	width: 35%;
 	font-family: arial, sans-serif;
+}
+
+.suggested .top-row::after {
+	content: "";
+	clear: both;
+	display: table;
 }
 
 .suggested h4 {
 	font-weight: 400;
 	margin-bottom: 15px;
+	float: left;
+}
+
+.auto {
+	float: right;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: bold;
+	margin: 5px 45px 0 0;
+}
+
+.video {
+	padding-right: 25px;
 }
 
 .video:hover {
 	cursor: pointer;
 }
 
-.video:nth-of-type(1) {
+.video:nth-of-type(2) {
 	padding-bottom: 15px;
-	border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.08);
 }
 
-.video:nth-of-type(2) {
+.video:nth-of-type(3) {
 	margin-top: 15px;
 }
 
