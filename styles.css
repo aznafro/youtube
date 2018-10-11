@@ -128,7 +128,8 @@ main {
 	margin: 0 auto;
 }
 
-.container > * {
+.video-column,
+.suggested {
 	float: left;
 }
 
@@ -476,7 +477,7 @@ main {
 }
 
 .comment__text {
-	width: 85%;
+	width: 84%;
 }
 
 .comment__text--name {
